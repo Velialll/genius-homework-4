@@ -1,0 +1,39 @@
+.hero-section {
+  padding-bottom: 126px;
+  padding-top: 123px;
+  background-image: linear-gradient(
+      94deg,
+      rgba(255, 255, 255, 1) 9.65%,
+      rgba(255, 255, 255, 0.6) 26.08%,
+      rgba(255, 255, 255, 0.25) 52.74%,
+      rgba(255, 255, 255, 0) 74.46%
+    ),
+    url('../images/hero-section-background.jpg');
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: 77% auto;
+}
+.hero-section .container {
+  position: relative;
+  left: 116px;
+}
+
+.hero-title {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+.hero-subtitle {
+  color: var(--color-brand-light);
+  font-family: 'Play', sans-serif;
+  font-size: 140px;
+  font-weight: 700;
+  line-height: 0.81;
+  max-width: 530px;
+  margin-bottom: 40px;
+}
+.recommendation-under-button {
+  color: var(--color-third-underbutton);
+  font-size: 12px;
+  max-width: 238px;
+}
