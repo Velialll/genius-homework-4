@@ -1,0 +1,90 @@
+.footer {
+  padding: 32px 0;
+  position: relative;
+  background-color: var(--color-brand-dark);
+  background-image: url(/images/footer-background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    background-repeat: no-repeat;
+    content: '';
+    right: 0;
+    width: 240px;
+    height: 152px;
+    background-image: url('/images/decor-vials-and-pipette.png');
+  }
+
+  &__container {
+    display: flex;
+    gap: 20px;
+  }
+  &__nav {
+    display: flex;
+    flex-basis: 50%;
+    gap: 20px;
+  }
+
+  &__logo {
+    flex-grow: 1;
+  }
+
+  &__menu {
+    flex-grow: 1;
+  }
+
+  &__address {
+    display: flex;
+    flex-basis: 50%;
+    gap: 20px;
+  }
+
+  &__address-list {
+    flex-grow: 1;
+  }
+
+  &__address-link {
+    color: var(--color-secondary-light);
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  &__address-link:hover {
+    color: var(--color-brand-light);
+    text-decoration: none;
+  }
+
+  &__address-icon {
+    fill: var(--color-secondary-light);
+    transition: fill 0.2s;
+  }
+
+  &__address-icon:hover {
+    fill: var(--color-brand-light);
+  }
+
+  &__address-info {
+    flex-grow: 1;
+  }
+
+  &__privacy-policy {
+    color: var(--color-secondary-light);
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  &__privacy-policy:hover {
+    color: var(--color-brand-light);
+    text-decoration: none;
+  }
+
+  &__data-protection {
+    color: var(--color-third-light);
+    font-size: 13px;
+  }
+}

@@ -3,17 +3,20 @@
   text-decoration: none;
   font-size: 18px;
   transition: color 0.2s;
+
+  &:hover {
+    color: var(--color-brand-light);
+  }
 }
-.link:hover {
-  color: var(--color-brand-light);
-}
+
 .link-footer {
   color: var(--color-secondary-light);
   font-size: 16px;
   text-decoration: none;
   transition: color 0.2s;
-}
-.link-footer:hover {
-  color: var(--color-brand-light);
-  text-decoration: none;
+
+  &:hover {
+    color: var(--color-brand-light);
+    text-decoration: none;
+  }
 }

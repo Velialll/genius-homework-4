@@ -1,0 +1,86 @@
+.transformation-section {
+  padding-bottom: 128px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
+  }
+
+  &__content {
+    max-width: 710px;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__text {
+    margin-bottom: 40px;
+    line-height: 1.7;
+  }
+
+  &__photo {
+    position: relative;
+  }
+
+  &__woman-photo-before,
+  &__woman-photo-after {
+    position: relative;
+    border-radius: 200px 200px 200px 200px;
+    box-shadow: 0 4px 4px 0 rgba(168, 198, 245, 0.2);
+  }
+
+  &__woman-photo-before {
+    bottom: -40px;
+  }
+
+  &__woman-photo-after {
+    left: 172px;
+    bottom: -80px;
+  }
+
+  &__small-icon-star,
+  &__medium-icon-star,
+  &__big-icon-star {
+    position: absolute;
+    animation-name: pulse-spin;
+    animation-duration: 5s;
+  }
+  &__big-icon-star {
+    bottom: 216px;
+    left: 118px;
+    fill: var(--color-brand-dark);
+  }
+
+  &__medium-icon-star {
+    top: 80px;
+    right: 0;
+    fill: var(--color-brand-light);
+    transform: rotate(-30deg);
+  }
+
+  &__small-icon-star {
+    bottom: 332px;
+    right: 32px;
+    fill: var(--color-third-light);
+  }
+}
+
+@keyframes pulse-spin {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(100deg);
+    fill: var(--color-brand-light);
+  }
+  50% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: rotate(360deg);
+    transform: scale(1);
+  }
+}

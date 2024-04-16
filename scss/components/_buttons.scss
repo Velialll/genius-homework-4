@@ -9,8 +9,9 @@
   cursor: pointer;
   font-size: 18px;
   transition: color 0.2s, background-color 0.2s;
-}
-.button:hover {
-  color: var(--color-brand-dark);
-  background-color: transparent;
+
+  &:hover {
+    color: var(--color-brand-dark);
+    background-color: transparent;
+  }
 }

@@ -12,12 +12,14 @@
   border: 1px solid var(--color-brand-dark);
   cursor: pointer;
   transition: background-color 0.2s, fill 0.2s;
-}
-.carousel-button:hover {
-  background-color: var(--color-brand-light);
-  border-color: var(--color-secondary-light);
-  fill: var(--color-secondary-light);
-}
-.carousel-button.previous {
-  transform: rotate(180deg);
+
+  &:hover {
+    background-color: var(--color-brand-light);
+    border-color: var(--color-secondary-light);
+    fill: var(--color-secondary-light);
+  }
+
+  &.previous {
+    transform: rotate(180deg);
+  }
 }
